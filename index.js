@@ -10,8 +10,8 @@ async function run() {
     core.info(`PR ID: ${prId}`);
     
     const context = github.context
-    const payload = context.payload;
-    core.info(`Payload: ${payload}`);
+    const pr = context.payload.pull_request;
+    core.info(`PR: ${pr}`);
 
     // const response = await instance.request(requestData)
     // core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
