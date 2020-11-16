@@ -18,7 +18,7 @@ async function run() {
 
     // core.info(`PR ID: ${prId}`);
     
-    const client = new GitHub(token, {});
+    // const client = new GitHub(token, {});
     core.info("Created the Github client");
     if (context) {
       core.info("Got the context");
