@@ -9,7 +9,7 @@ async function run() {
     const prId = core.getInput('pr-id');
     const token = core.getInput('github-token', { required: true });
 
-    core.info(`PR ID: ${prId}`);
+    // core.info(`PR ID: ${prId}`);
     
     const client = new GitHub(token, {});
     core.info("Created the Github client");
