@@ -5,6 +5,9 @@ inputs:
   pr-id: # change this
     required: false
     description: 'The ID of the PR that was updated'
+  github-token: 
+    required: true
+    descriptioon: 'The Github token' 
 runs:
   using: 'node12'
   main: 'dist/index.js'
