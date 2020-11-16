@@ -22,13 +22,13 @@ async function run() {
     core.info("Created the Github client");
     if (context) {
       core.info("Got the context");
-      core.info(context);
+      core.info(JSON.stringify(context));
       const payload = context.payload;
       core.info("Got the payload");
-      core.info(payload);
+      core.info(JSON.stringify(payload));
       const pr = payload.pull_request;
       core.info("Got the PR details");
-      core.info(pr);
+      core.info(JSON.stringify(pr));
     }
     
     // const pr = context.payload.pull_request;
